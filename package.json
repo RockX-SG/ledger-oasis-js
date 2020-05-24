@@ -1,5 +1,5 @@
 {
-  "name": "ledger-oasis-js",
+  "name": "@zondax/ledger-oasis",
   "version": "0.0.0",
   "description": "Node API for Oasis App (Ledger Nano S/X)",
   "main": "./dist/index.js",
@@ -13,7 +13,7 @@
     "Javascript",
     "Oasis"
   ],
-  "author": "ZondaX GmbH",
+  "author": "Zondax GmbH",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/zondax/ledger-oasis-js/issues"

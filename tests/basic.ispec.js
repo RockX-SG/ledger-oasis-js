@@ -1,7 +1,9 @@
+/* eslint-disable no-console */
 import OasisApp from "index.js";
 import TransportNodeHid from "@ledgerhq/hw-transport-node-hid";
-import { expect, test } from "jest";
+import jest, { expect, test } from "jest";
 
+// eslint-disable-next-line camelcase
 const { sha512_256 } = require("js-sha512");
 const ed25519 = require("ed25519-supercop");
 
@@ -39,7 +41,7 @@ test("publicKey", async () => {
 });
 
 test("getAddressAndPubKey", async () => {
-  jest.setTimeout(60000);
+  jest.setTimeout(5000);
 
   const transport = await TransportNodeHid.create(1000);
   const app = new OasisApp(transport);
@@ -61,7 +63,7 @@ test("getAddressAndPubKey", async () => {
 });
 
 test("showAddressAndPubKey", async () => {
-  jest.setTimeout(60000);
+  jest.setTimeout(5000);
 
   const transport = await TransportNodeHid.create(1000);
   const app = new OasisApp(transport);
@@ -121,7 +123,7 @@ test("deviceInfo", async () => {
 });
 
 test("sign_and_verify", async () => {
-  jest.setTimeout(60000);
+  jest.setTimeout(5000);
 
   const transport = await TransportNodeHid.create(1000);
   const app = new OasisApp(transport);
@@ -158,7 +160,7 @@ test("sign_and_verify", async () => {
 });
 
 test("sign_invalid", async () => {
-  jest.setTimeout(60000);
+  jest.setTimeout(5000);
 
   const transport = await TransportNodeHid.create(1000);
   const app = new OasisApp(transport);
